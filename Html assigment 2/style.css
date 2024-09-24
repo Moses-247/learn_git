@@ -1,0 +1,59 @@
+body {
+    font-family: 'roboto';
+    margin: 0;
+    padding: 0;
+    background-color: #cfcfcf;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+section {
+    padding: 2em;
+}
+h2 {
+    color: #000000;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    background-color: #fff;
+    margin: 0.5em 0;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    bottom: 0;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+.appetizers,
+.main-courses{
+    display: block;
+    align-items: center;
+}
+.appetizers > ul,
+.main-courses > ul,
+.desserts > ul{
+    padding: 20px;
+    margin-left: 20px;
+}
+.appetizers >ul >li:hover,
+.main-courses >ul>li:hover,
+.desserts >ul >li:hover{
+    color: rgb(255, 0, 0);
+    transition: 0.5 ease;
+    cursor:pointer;
+}
