@@ -1,0 +1,42 @@
+START
+    // Declaring the variables
+    INTEGER length = 0
+    INTEGER wordCount = 0
+    INTEGER vowelCount = 0
+    BOOLEAN inWord = FALSE
+    CHARACTER ch
+    
+    OUTPUT "Enter a sentence ending with a period:"
+    STRING sentence = INPUT()
+    
+
+    FOR EACH ch IN sentence
+        IF ch = '.' THEN
+            BREAK
+        END IF
+        length = length + 1
+
+        IF ch = ' ' THEN
+            IF inWord THEN
+                wordCount = wordCount + 1
+                inWord = FALSE
+            END IF
+        ELSE
+            inWord = TRUE
+            IF ch = 'A' OR ch = 'E' OR ch = 'I' OR ch = 'O' OR ch = 'U' OR ch = 'a' OR ch = 'e' OR ch = 'i' OR ch = 'o' OR ch = 'u' THEN
+                vowelCount = vowelCount + 1
+            END IF
+        END IF
+    END FOR
+    
+    
+    IF inWord THEN
+        wordCount = wordCount + 1
+    END IF
+    
+    // results
+    OUTPUT "Length of the sentence: " + length
+    OUTPUT "Number of words: " + wordCount
+    OUTPUT "Number of vowels: " + vowelCount
+    
+END
