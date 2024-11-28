@@ -23,7 +23,8 @@ START
             END IF
         ELSE
             inWord = TRUE
-            IF ch = 'A' OR ch = 'E' OR ch = 'I' OR ch = 'O' OR ch = 'U' OR ch = 'a' OR ch = 'e' OR ch = 'i' OR ch = 'o' OR ch = 'u' THEN
+            IF ch = 'A' OR ch = 'E' OR ch = 'I' OR ch = 'O' OR ch = 'U' OR ch = 'a' OR ch = 'e' OR ch = 'i' OR ch = 'o' OR ch = 'u'
+             THEN
                 vowelCount = vowelCount + 1
             END IF
         END IF
@@ -38,5 +39,5 @@ START
     OUTPUT "Length of the sentence: " + length
     OUTPUT "Number of words: " + wordCount
     OUTPUT "Number of vowels: " + vowelCount
-    
+
 END
