@@ -13,6 +13,6 @@ function countChar(str){
 //Capitalize Words
 
 function capitalWOrds(str){
-    
+    return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slide(1)).join(' ');
 }
 
